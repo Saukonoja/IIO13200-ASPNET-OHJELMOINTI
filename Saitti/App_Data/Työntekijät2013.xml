@@ -43,11 +43,11 @@
     <palkka>2000</palkka>
   </tyontekija>
   <tyontekija>
-    <etunimi>Sinun</etunimi>
-    <sukunimi>Nimesi tänne?</sukunimi>
+    <etunimi>Timo</etunimi>
+    <sukunimi>Saukonoja</sukunimi>
     <numero>101</numero>
     <tyosuhde>määräaikainen</tyosuhde>
-    <palkka>3000</palkka>
+    <palkka>1920</palkka>
   </tyontekija>
 
 </tyontekijat>
