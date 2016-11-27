@@ -12,7 +12,7 @@
 <body>
     <form id="form1" runat="server">
         <meta name="viewport" content="width=device-width" /> 
-        <img src="Images/palkki.png" />
+        <img src="/Images/palkki.png" runat="server" />
 
     <div>
         <asp:ContentPlaceHolder id="body" runat="server">
