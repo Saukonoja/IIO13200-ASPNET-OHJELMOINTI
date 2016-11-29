@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<palautteet>
+  <palaute>
+    <Pvm>20131001</Pvm>
+    <Nimi>Juice Läskinen</Nimi>
+    <Kurssi>.Net-ohjelmointi- IIO13200</Kurssi>
+    <Opittu>paljon hyvää ja törkeän tärkeää</Opittu>
+    <Haluan_oppia>tietoturvasta tsäbää</Haluan_oppia>
+    <Hyvää>demot</Hyvää>
+    <Parannettavaa>enemmän omaa tekemistä</Parannettavaa>
+    <Muuta>GitHub ok</Muuta>
+  </palaute>
+  <palaute>
+    <Pvm>2013103</Pvm>
+    <Nimi>Esa Vesa</Nimi>
+    <Kurssi>.Net-ohjelmointi- IIO13200</Kurssi>
+    <Opittu>ASP.NET perusteet</Opittu>
+    <Haluan_oppia>autentikointi ja hashaus</Haluan_oppia>
+    <Hyvää>hyvää</Hyvää>
+    <Parannettavaa>parannettavaa</Parannettavaa>
+    <Muuta>blaah blaah</Muuta>
+  </palaute>
+  <palaute>
+    <Pvm>29.11.2016</Pvm>
+    <Nimi>asd</Nimi>
+    <Kurssi>asd</Kurssi>
+    <Opittu>asd</Opittu>
+    <Haluan_oppia>ads</Haluan_oppia>
+    <Hyvää>asd</Hyvää>
+    <Parannettavaa>asd</Parannettavaa>
+    <Muuta>asd</Muuta>
+  </palaute>
+</palautteet>
