@@ -55,12 +55,12 @@ public partial class CassieConnector : System.Web.UI.Page {
     protected void btnGetAll_Click(object sender, EventArgs e) {
         ISession session = connect();
         DataTable dt = new DataTable();
+        dt.Columns.Add("lastname");
+        dt.Columns.Add("firstname");
+        dt.Columns.Add("age");
         var results = session.Execute("select * from users;");
         foreach (var row in results) {
-            string lastname = row.GetValue<string>(0);
-            int age = row.GetValue<int>(1);
-            string firstname = row.GetValue<string>(2);
-            dt.Rows.Add(lastname, age, firstname);
+            dt.Rows.Add(row.GetValue<string>(0), row.GetValue<int>(1), row.GetValue<string>(2));
         }
         gvUsers.DataSource = dt;
         gvUsers.DataBind();
