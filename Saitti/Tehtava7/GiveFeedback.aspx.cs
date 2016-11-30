@@ -46,7 +46,9 @@ public partial class Tehtava7_GiveFeedback : System.Web.UI.Page {
             lblMessages.Text = ex.Message;
         }
     }
-
+    /*Mysliä ei voinut kokeilla antaa ilmoituksen:
+     *  Authentication to host 'mysql.labranet.jamk.fi' for user 'salesa' using method 'mysql_native_password' failed with message: Access denied for user 'salesa'@'elek-436-ws-01.labranet.jamk.fi' (using password: YES)
+     *  Logiikka itsessään pitäisi toimia aika tuttua asiaa */
     protected void btnSendMysql_Click(object sender, EventArgs e) {
         try {
             MySqlConnection conn = new MySqlConnection(connStr);
