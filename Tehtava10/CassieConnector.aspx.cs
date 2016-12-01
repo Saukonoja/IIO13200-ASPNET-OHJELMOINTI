@@ -26,8 +26,11 @@ public partial class CassieConnector : System.Web.UI.Page {
         session.Execute("insert into users (firstname, lastname, age) values ('" + firstname + "','" + lastname +"'," + age + " );");
     }
 
+    //updatessa käytetään prepared statement ehkäisemään injektiota
     protected void update(ISession session, string firstname, string lastname, int age) {
-        session.Execute("update users set firstname= '" + firstname + "' , lastname='" + lastname + "', age='" + age + "' where lastname='"+lastname+"';");
+        var ps = session.Prepare("update users set firstname= ?, age=? where lastname=?;");
+        var statement = ps.Bind(firstname, age, lastname);
+        session.Execute(statement);
     }
 
     protected Row select(ISession session, string lastname) {

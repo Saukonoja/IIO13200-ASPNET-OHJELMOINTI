@@ -12,11 +12,22 @@
             <asp:Button ID="btnGetAll" Text="Get all users" runat="server" OnClick="btnGetAll_Click" />
             <asp:GridView ID="gvUsers" runat="server"></asp:GridView>
         </div>
+        <!-- Regexit ehkäisemään injektiota-->
         <div style="float:left;">
-            Lastname(PRIMARY KEY)<br /><asp:TextBox ID="txtLastname" runat="server"></asp:TextBox><br />
-            Firstname<br /><asp:TextBox ID="txtFirstname" runat="server"></asp:TextBox><br />
+            Lastname(PRIMARY KEY)<br /><asp:TextBox ID="txtLastname" runat="server"></asp:TextBox><br /> <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"     
+                                    ErrorMessage="No special characters." 
+                                    ControlToValidate="txtLastname"     
+                                    ValidationExpression="^[\w{.,'}+ :;?®©-]+$" />
+            Firstname<br /><asp:TextBox ID="txtFirstname" runat="server"></asp:TextBox><br /> <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"     
+                                    ErrorMessage="No special characters." 
+                                    ControlToValidate="txtFirstname"     
+                                    ValidationExpression="^[\w{.,'}+ :;?®©-]+$" />
             
-            Age<br /><asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
+            Age<br /><asp:TextBox ID="txtAge" runat="server"></asp:TextBox> <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server"     
+                                    ErrorMessage="No special characters." 
+                                    ControlToValidate="txtAge"     
+                                    ValidationExpression="^[\w{.,'}+ :;?®©-]+$" />
+
             <asp:Button ID="btnInsert" runat="server" Text="Insert into Cassandra" OnClick="btnInsert_Click" />
             <asp:Button ID="btnUpdate" runat="server" Text="Update user" OnClick="btnUpdate_Click" />
             <asp:Button ID="btnDelete" runat="server" Text="Delete (give lastname only)" OnClick="btnDelete_Click" />
